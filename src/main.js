@@ -22,7 +22,7 @@ function init() {
 
   renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 2.75;
+  renderer.toneMappingExposure = 3.25;
   renderer.shadowMap.enabled = true;
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setClearColor(0x000000, 0.35);
