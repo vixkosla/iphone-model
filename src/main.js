@@ -56,7 +56,7 @@ function animate() {
 
 function environment() {
   const rgbeLoader = new RGBELoader();
-  rgbeLoader.load('public/cyclorama_hard_light_1k.hdr', function (texture) {
+  rgbeLoader.load('/cyclorama_hard_light_1k.hdr', function (texture) {
     const envMap = new THREE.PMREMGenerator(renderer).fromEquirectangular(texture);
     scene.environment = envMap.texture;
 
